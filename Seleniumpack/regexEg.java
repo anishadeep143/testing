@@ -22,17 +22,17 @@ public class regexEg {
 		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 	    driver.get("https://www.google.com/");
-	    
-	    WebElement we=driver.findElement(By.xpath("//*[@id='gbqfq']"));
-	    we.sendKeys("not able to see sponsered links on google search");
-	    driver.findElement(By.xpath("//*[@id='gbqfq']")).click();
-	    List<WebElement> allelem=(List<WebElement>) driver.findElement(By.xpath("//h3/a"));
-	    for(WebElement ele:allelem)
-	    {
-	    	allelem.size();
-	    	System.out.println(ele.getText());
-	    }
-	    we.click();
+//	    
+//	    WebElement we=driver.findElement(By.xpath("//*[@id='gbqfq']"));
+//	    we.sendKeys("not able to see sponsered links on google search");
+//	    driver.findElement(By.xpath("//*[@id='gbqfq']")).click();
+//	    List<WebElement> allelem=driver.findElement(By.xpath("//h3/a"));
+//	    for(WebElement ele:allelem)
+//	    {
+//	    	allelem.size();
+//	    	System.out.println(ele.getText());
+//	    }
+//	    we.click();
 	    
 	    }
 }
